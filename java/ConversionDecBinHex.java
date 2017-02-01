@@ -1,13 +1,15 @@
+package java;
+
 import java.util.Scanner;
 
-public class Conversion{
+public class ConversionDecBinHex{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
-        char continue, mode;
+        char continuer, mode;
         
         do{
-            continue = ' ';
+            continuer = ' ';
             mode = ' ';
             
             // Mode
@@ -23,7 +25,7 @@ public class Conversion{
         
             String dec, bin, hex;
             
-        } while(continue == 'O');
+        } while(continuer == 'O');
         
         sc.close();
     }
