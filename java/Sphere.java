@@ -1,3 +1,5 @@
+package java;
+
 import java.util.Scanner;
 
 public class Sphere{
@@ -47,7 +49,7 @@ public class Sphere{
             } while(unit == " ");
             
             //Assignation de la donnée entrée & calculs
-            double rayon = 0.0, diam = 0.0; perim = 0.0, aireD = 0.0 ; aireS = 0.0 ; vol = 0.0;
+            double rayon = 0.0, diam = 0.0, perim = 0.0, aireD = 0.0, aireS = 0.0, vol = 0.0;
             
             double entry = -1;
             do{
@@ -97,7 +99,7 @@ public class Sphere{
             }
             else if(mode == '6'){
                 vol = entry;
-                rayon = Math.sqrt3(vol * 3 / 4 / Math.PI);
+                rayon = Math.cbrt(vol * 3 / 4 / Math.PI);
                 diam = rayon * 2.0;
                 perim = Math.PI * diam;
                 aireD = Math.PI * (rayon * rayon);
@@ -121,7 +123,7 @@ public class Sphere{
                 if(continuer != 'O' && continuer != 'N') System.out.println("Choix incorrect, veuillez réessayer.");
             } while(continuer != 'O' && continuer != 'N');
             
-        } while(continue == 'O');
+        } while(continuer == 'O');
         
         sc.close();
     }
