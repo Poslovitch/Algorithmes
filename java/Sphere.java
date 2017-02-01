@@ -4,12 +4,12 @@ public class Sphere{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
-        char continue = ' ', mode = ' ';
+        char continuer = ' ', mode = ' ';
         String unit = " ";
         String[] units = {"mm", "cm", "dm", "m", "dam", "hm", "km"};
         
         do{
-            continue = ' ';
+            continuer = ' ';
             unit = " ";
             
             //Mode
@@ -117,9 +117,9 @@ public class Sphere{
             //Continuer
             do{
                 System.out.println("Souhaitez-vous rentrer une autre valeur? (O/N)");
-                continue = sc.nextLine().charAt(0);
-                if(continue != 'O' && continue != 'N') System.out.println("Choix incorrect, veuillez réessayer.");
-            } while(continue != 'O' && continue != 'N');
+                continuer = sc.nextLine().charAt(0);
+                if(continuer != 'O' && continuer != 'N') System.out.println("Choix incorrect, veuillez réessayer.");
+            } while(continuer != 'O' && continuer != 'N');
             
         } while(continue == 'O');
         
