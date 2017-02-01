@@ -1,6 +1,8 @@
+package java;
+
 import java.util.Scanner;
 
-public class Main{
+public class SolveurSudoku{
     public static void main(String[] args){
         // Input
         int[][] grille = new int[9][9];
@@ -15,7 +17,7 @@ public class Main{
             for(int columns = 1 ; columns <= 9 ; columns++){
                 char c = line.charAt(columns-1);
                 if(Character.isDigit(c)){
-                    int[lines-1][columns-1] = Integer.valueOf(c);
+                    grille[lines-1][columns-1] = Integer.valueOf(c);
                 }
             }
         }
@@ -28,7 +30,7 @@ public class Main{
         
         //Output
         System.out.println("Solved Grid:");
-        displayGrid(grille)
+        displayGrid(grille);
     }
     
     private static void displayGrid(int[][] grid){
