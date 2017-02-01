@@ -1,6 +1,8 @@
+package java;
+
 import java.util.Scanner;
 
-public class Main{
+public class ConjectureCollatz{
   public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
     int start = -1;
