@@ -12,12 +12,15 @@ public class Cryptage3D{
         System.out.println("Entrez le nombre de points:");
         int nbPoints = sc.nextInt();
         
+        List<PointLocation> points = new ArrayList<PointLocation>();
         for(int point = 1 ; point <= nbPoints ; point++){
             System.out.println("X(" + point + "):");
-            
+            double x = sc.nextDouble();
             System.out.println("Y(" + point + "):");
-            
+            double y = sc.nextDouble();
             System.out.println("Z(" + point + "):");
+            double z = sc.nextDouble();
+            points.add(new PointLocation(new double[]{x, y, z}));
         }
         
         sc.close();
